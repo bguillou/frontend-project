@@ -1,7 +1,6 @@
-import { State } from '../state';
+import { combineReducers } from 'redux';
+import login from './login';
 
-const replaceMe = (state: State = {}) => state;
-/**
- * Application root reducer
- */
-export default replaceMe;
+const rootReducer = combineReducers({ login });
+
+export default (state: any, action: any) => rootReducer(state, action);
