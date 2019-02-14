@@ -64,7 +64,7 @@ class App extends Component<Props> {
           gojob
         </Typography>
         {success ? (
-          <Typography color="success" variant="headline2">
+          <Typography color="success" variant="headline2" style={{ marginTop: '40px' }}>
             Connexion réussie
           </Typography>
         ) : (
